@@ -21,14 +21,13 @@ header {
   display: none;
 }
 
-
-
 .logo {
   display: flex;
   height: 80px;
   width: 80px;
   margin-left: 16px;
 }
+/* sectio starts here */
 
 nav ul {
   position: fixed;
@@ -37,7 +36,7 @@ nav ul {
   padding: 16px;
   background: #585858;
   left: -100%;
-  transition: all .5s;
+  transition: all 0.5s;
   list-style: none;
 }
 
@@ -52,12 +51,11 @@ nav a {
   font-size: 20px;
   text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
   text-transform: uppercase;
-  
 }
 
 nav a:hover {
   color: rgb(91, 180, 253);
-  transition: ease-in .1s;
+  transition: ease-in 0.1s;
 }
 
 .toggler:checked ~ nav ul {
@@ -81,7 +79,6 @@ nav a:hover {
   opacity: 1;
 }
 
-
 /* Desktop Screen Format */
 
 @media screen and (min-width: 800px) {
@@ -95,7 +92,6 @@ nav a:hover {
   }
 
   nav {
-    
     display: flex;
     grid-column: 3/4;
     justify-content: flex-end;
@@ -106,17 +102,14 @@ nav a:hover {
     all: unset;
     list-style: none;
     display: flex;
-    
   }
 
   nav li {
     margin-bottom: 0;
     margin-right: 16px;
-    
   }
 
   nav a {
     opacity: 1;
   }
-
 }
